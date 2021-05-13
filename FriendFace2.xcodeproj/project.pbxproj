@@ -14,6 +14,8 @@
 		CA579844264D50850095A817 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA579843264D50850095A817 /* Assets.xcassets */; };
 		CA579847264D50850095A817 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA579846264D50850095A817 /* Preview Assets.xcassets */; };
 		CA57984A264D50850095A817 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA579848264D50850095A817 /* LaunchScreen.storyboard */; };
+		CA579853264D53050095A817 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA579851264D53050095A817 /* User+CoreDataClass.swift */; };
+		CA579854264D53050095A817 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA579852264D53050095A817 /* User+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		CA579846264D50850095A817 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CA579849264D50850095A817 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CA57984B264D50850095A817 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA579851264D53050095A817 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CA579852264D53050095A817 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 		CA579839264D50840095A817 /* FriendFace2 */ = {
 			isa = PBXGroup;
 			children = (
+				CA579851264D53050095A817 /* User+CoreDataClass.swift */,
+				CA579852264D53050095A817 /* User+CoreDataProperties.swift */,
 				CA57983A264D50840095A817 /* AppDelegate.swift */,
 				CA57983C264D50840095A817 /* SceneDelegate.swift */,
 				CA57983E264D50840095A817 /* ContentView.swift */,
@@ -150,8 +156,10 @@
 			files = (
 				CA57983B264D50840095A817 /* AppDelegate.swift in Sources */,
 				CA579842264D50840095A817 /* FriendFace2.xcdatamodeld in Sources */,
+				CA579854264D53050095A817 /* User+CoreDataProperties.swift in Sources */,
 				CA57983D264D50840095A817 /* SceneDelegate.swift in Sources */,
 				CA57983F264D50840095A817 /* ContentView.swift in Sources */,
+				CA579853264D53050095A817 /* User+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
