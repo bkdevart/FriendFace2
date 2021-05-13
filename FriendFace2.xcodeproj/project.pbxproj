@@ -18,6 +18,7 @@
 		CA579854264D53050095A817 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA579852264D53050095A817 /* User+CoreDataProperties.swift */; };
 		CA579856264D55A60095A817 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA579855264D55A60095A817 /* DetailView.swift */; };
 		CA579858264D56480095A817 /* UserStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA579857264D56480095A817 /* UserStruct.swift */; };
+		CA57985A264D56FF0095A817 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA579859264D56FF0095A817 /* Friend.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		CA579852264D53050095A817 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		CA579855264D55A60095A817 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		CA579857264D56480095A817 /* UserStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStruct.swift; sourceTree = "<group>"; };
+		CA579859264D56FF0095A817 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				CA57983A264D50840095A817 /* AppDelegate.swift */,
 				CA57983C264D50840095A817 /* SceneDelegate.swift */,
 				CA57983E264D50840095A817 /* ContentView.swift */,
+				CA579859264D56FF0095A817 /* Friend.swift */,
 				CA579857264D56480095A817 /* UserStruct.swift */,
 				CA579855264D55A60095A817 /* DetailView.swift */,
 				CA579843264D50850095A817 /* Assets.xcassets */,
@@ -166,6 +169,7 @@
 				CA579856264D55A60095A817 /* DetailView.swift in Sources */,
 				CA57983D264D50840095A817 /* SceneDelegate.swift in Sources */,
 				CA57983F264D50840095A817 /* ContentView.swift in Sources */,
+				CA57985A264D56FF0095A817 /* Friend.swift in Sources */,
 				CA579853264D53050095A817 /* User+CoreDataClass.swift in Sources */,
 				CA579858264D56480095A817 /* UserStruct.swift in Sources */,
 			);
