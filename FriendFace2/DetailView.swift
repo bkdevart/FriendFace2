@@ -16,41 +16,40 @@ struct DetailView: View {
 //    let users: [User]  // make moc?
     
     var body: some View {
-        VStack {
-            List(users) { user in
-                VStack(alignment: .leading) {
-                    Text(user.wrappedName)
-                        .font(.largeTitle)
-                        .fontWeight(.bold)
-                    Text(user.wrappedCompany)
-                        .foregroundColor(.secondary)
-                    Text("Age: " + String(user.age))
-                        .font(.caption)
-                    Text(user.wrappedAbout)
-                    Text("Member since \(user.formattedRegisteredDate)")
-                        .font(.footnote)
-                    Text("Friends:")
-//                    ForEach(user.friendsArray, id: \.self) { friend in
-//                        Text(friend.wrappedFriendName)
-                    }
-                }
-            }
+        VStack(alignment: .leading) {
+            Text(user.wrappedName)
+                .font(.largeTitle)
+                .fontWeight(.bold)
+            Text(user.wrappedCompany)
+                .foregroundColor(.secondary)
+            Text("Age: " + String(user.age))
+                .font(.caption)
+            Text(user.wrappedAbout)
+            Text("Member since \(user.formattedRegisteredDate)")
+                .font(.footnote)
+//            Text("Friends:")
+            
+//                ForEach(user.friendsArray) { friend in
+//                    Text(friend.wrappedName)
+//                }
+//            }
             
 
-//            NavigationView {
-//                List(friends, id: \.id) { item in
-//                    // need to look up id off of User and pass to DetailViews
-//                    NavigationLink(destination: DetailView(user: item,
-//                                                           friends: findFriends(friends: item.friendsArray))) {
-//                        Text(item.name)
-//                            .font(.headline)
-//                        Text(item.company)
-//                            .foregroundColor(.secondary)
-//                    }
-//                }
-//                .navigationTitle("\(user.name)'s friends")  // pull first name only
-//            }
-//        }
+            NavigationView {
+                VStack {
+                    ForEach(user.friendsArray) { friend in
+                        // need to look up id off of User and pass to DetailViews
+                        NavigationLink(destination: DetailView(user: friend)) {
+                            Text(friend.wrappedName)
+                                .font(.headline)
+                            Text(friend.wrappedCompany)
+                                .foregroundColor(.secondary)
+                        }
+                    }
+                    .navigationTitle("\(user.wrappedName)'s friends")  // pull first name only
+                }
+            }
+        }
         .padding(.horizontal)
     }
     

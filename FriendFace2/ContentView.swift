@@ -44,7 +44,6 @@ struct ContentView: View {
 
         URLSession.shared.dataTask(with: request) { data, response, error in
             if let data = data {
-                // crashes here
                 let decoder = JSONDecoder()
                 decoder.dateDecodingStrategy = .iso8601
                 
